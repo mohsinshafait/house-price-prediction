@@ -8,12 +8,12 @@ def load_model():
     """
     Load the trained house price prediction pipeline.
     """
-    model = joblib.load(r"C:\Users\mohsi\Python\Projects\house_price_prediction\models\house_price_pipeline.pkl")
+    model = joblib.load("models/house_price_pipeline.pkl")
     return model
 
 # Load the defualt value, median(numerical data), mode(categorical data)
 def load_default_values():
-    return joblib.load(r"C:\Users\mohsi\Python\Projects\house_price_prediction\models\default_values.pkl")
+    return joblib.load("models/default_values.pkl")
 
 
 # Drop Down Options
@@ -22,7 +22,7 @@ def load_dropdown_options():
     """
     Load dropdown options for categorical features.
     """
-    return joblib.load(r"C:\Users\mohsi\Python\Projects\house_price_prediction\models/dropdown_options.pkl")
+    return joblib.load("models/dropdown_options.pkl")
 
 # User Inputs
 
